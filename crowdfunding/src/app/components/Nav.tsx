@@ -34,20 +34,26 @@ export default function Navigation() {
           </Link>
         </li>
         <li>
-          <Link href="/" className="flex flex-col items-center text-primary">
+          <Link
+            href="/stake/portfolio"
+            className="flex flex-col items-center text-primary"
+          >
             <IconUserBolt size={24} />
             <span className="text-xs">My Proftfolio</span>
           </Link>
         </li>
         <li>
-          <Link href="/" className="flex flex-col items-center text-primary">
+          <Link
+            href="/stake/rewards"
+            className="flex flex-col items-center text-primary"
+          >
             <IconStars size={24} />
             <span className="text-xs">Rewards</span>
           </Link>
         </li>
         <li>
           <Link
-            href="/search"
+            href="/stake/profile"
             className="flex flex-col items-center text-gray-500"
           >
             <IconUserPentagon size={24} />

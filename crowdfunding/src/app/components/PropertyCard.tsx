@@ -13,20 +13,33 @@ import {
   IconUserPentagon,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import VerificationCard from "./VerificationCard";
 
 export default function PropertyCard() {
+  const randomImages = [
+    "https://plus.unsplash.com/premium_photo-1670360414483-64e6d9ba9038?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1520608421741-68228b76b6df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  ];
+
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 mb-12">
+    <div className="flex flex-col min-h-screen bg-gray-100 mb-12 p-3">
+      <VerificationCard />
       <main className="flex-grow overflow-y-auto p-4">
         <section className="mb-6">
           <h2 className="text-lg font-semibold mb-2">Featured Properties</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
             {[1, 2, 3, 4].map((i) => (
-              <div className="max-w-[300px] w-full mx-2 bg-white rounded-lg overflow-hidden shadow-lg mt-10 ml-3">
+              <div className="max-w-[330px] w-full mx-2 bg-white rounded-lg overflow-hidden shadow-lg mt-10 ">
                 {/* Image */}
                 <img
                   className="w-full h-48 object-cover"
-                  src="https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  src={
+                    randomImages[
+                      Math.floor(Math.random() * randomImages.length)
+                    ]
+                  }
                   alt="Property"
                 />
 
@@ -86,7 +99,17 @@ export default function PropertyCard() {
                 key={i}
                 className="bg-white rounded-lg shadow p-4 flex items-center"
               >
-                <div className="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+                <div className="w-16 h-16 bg-gray-200 rounded-full mr-4">
+                  <img
+                    src={
+                      randomImages[
+                        Math.floor(Math.random() * randomImages.length)
+                      ]
+                    }
+                    className="w-16 h-16 rounded-full object-cover"
+                    alt="Property"
+                  />
+                </div>
                 <div>
                   <p className="font-semibold">Commercial Building {i}</p>
                   <p className="text-sm text-gray-600">
