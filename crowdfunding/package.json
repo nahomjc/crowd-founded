@@ -1,0 +1,41 @@
+{
+  "name": "crowdfunding",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mantine/carousel": "^7.13.0",
+    "@mantine/core": "^7.13.0",
+    "@mantine/dates": "^7.13.0",
+    "@mantine/form": "^7.13.0",
+    "@mantine/hooks": "^7.13.0",
+    "@mantine/modals": "^7.13.0",
+    "@mantine/notifications": "^7.13.0",
+    "@mantine/nprogress": "^7.13.0",
+    "@mantine/spotlight": "^7.13.0",
+    "@tabler/icons-react": "^3.17.0",
+    "autoprefixer": "^10.4.20",
+    "dayjs": "^1.11.13",
+    "embla-carousel-react": "^7.1.0",
+    "next": "14.2.13",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8.4.47",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
