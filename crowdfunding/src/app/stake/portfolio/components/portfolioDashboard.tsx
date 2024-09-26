@@ -33,7 +33,7 @@ export default function PortfolioDashboard() {
   };
 
   const investments = [
-    { name: "Residential Complex A", value: 100000, growth: 0.08 },
+    { name: "Residential Complex A", value: 100000, growth: 0.09 },
     { name: "Commercial Building B", value: 75000, growth: 0.06 },
     { name: "Industrial Park C", value: 50000, growth: 0.04 },
     { name: "Retail Space D", value: 25000, growth: 0.07 },
